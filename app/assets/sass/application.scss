@@ -1,0 +1,353 @@
+// //@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
+
+// //google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
+
+@import "variables";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// // available variables to change the brand colours as required
+
+// //base colours
+//$blue:#007299;
+// $dark-blue: #003F55;
+// $light-blue: #3399BB;
+// $pale-blue: #b3d9e6;
+// $green:#008000;
+// $light-green:#009A00;
+// $black:#212224;
+// $light-black:#3D414A;
+// $dark-grey:#666B76;
+// $grey:#9DA5B2;
+// $light-grey:#DCDEE1;
+// $lighter-grey:#F6F7FA;
+// $white:#FFFFFF;
+// $yellow:#FFBF47;
+// $dark-yellow:#FAA300;
+// $red:#c0392b;
+// //$base-background-color:#fff;
+// $border-color:$light-grey;
+// $brand-color:$blue;
+// $button-color:$green;
+// $button-hover-color:lighten($button-color,5%);
+// $focus-color:$yellow;
+// $base-container-width:1280px;
+// //$btn-background-color:green ;
+// $alert-color:$red;
+
+// //typography
+// $font-primary:'Open Sans',
+// sans-serif; // main font
+// $font-secondary:'Montserrat',
+// sans-serif; // secondary font used for headings
+// //$base-font-size:16px !default;
+// //$base-font-size-desktop:19px !default;
+// $base-line-height: 1.4;
+// $base-font-color:$black;
+// $header-font-color:$black;
+// $secondary-font-color:$dark-grey;
+// $header-font-weight: 700;
+// //$base-font-weight: 400 !default;
+// $base-link-color:$blue;
+// $base-link-hover-color:$light-blue;
+// $base-link-visited-color:#4C2C92;
+// $secondary-link-color:$dark-blue;
+
+// //panel colours
+// $panel-color:#E5F1F5;
+// $panel-color-secondary:#DCDEE1;
+// //global used on all partials to get a uniform spacing between elements
+// //$base-margin-bottom:1.875em ;
+// //headerTop
+// //$search-link-background:#F3F3F4 ;
+// //$search-link:#333 ;
+// // mainNav.scss
+// $main-nav-background:lighten( $brand-color,3%);
+// //$main-nav-link:#fff ;
+// //footer.scss
+// //$footer-font-color:#fff ;
+// //$footer-nav-selected-link:#133E8D ;
+// //sectionSubsite.scss - socialamedia.scss
+// //$section-Background:#efefef ;
+// //socialamedia.scss
+// //$social-link-color:#337ab7 ;
+// //sideNavigation.scss
+// //$side-nav-active-background:#133E8D ;
+// //carousel.scss
+// //$carousel-active-background:#000 ;
+// //$carousel-indicators-active-background:#ccc ;
+// //$carousel-caption-background: rgba(0,0,0,0.6) ;
+// //$carousel-caption-font-color:#fff ;
+// //blocklinks.scss
+// //$block-link-back:#f6f6f6 ;
+// //$block-link-back-hover:#3380A4 ;
+// //$promo-group-border:1px solid #fff ; 
+// //$promo-group-background:#EDF2F5 ; 
+// //$promo-group-li-background:#EDF2F5 ;
+// //$promo-group-link-color:#216486 ;
+// //promolist webpart
+// //$link-font-color:#fff;
+// //$span-info-color:#133E8D;
+// //$span-info-hover:#131A22;
+// //$span-info-secondary-color:#fff;
+// //$span-arrow-base:darken($span-info-color, 10%);
+// //$span-third-info-base:#f6f6f6;
+// //$third-info-font-color:#333;
+// //$arrow-color:#fff;
+// //$contentFontColor:#333;
+// //$content-arrow-color:#133E8D;
+// //$content-border-color:#ddd;
+// //section backgrounds
+// $sectionHeader-background-color:$brand-color;
+// $sectionOne-background-color:#fff;
+// $sectionTwo-background-color:#fff;
+// $sectionThree-background-color:#fff;
+// $sectionFour-background-color:#fff;
+// $sectionFive-background-color:#fff;
+// //iconlinks
+// //$iconLinkIconColor:#FFC82E;
+// //heroBanner
+// //$heroFontBackground:rgba(0, 0, 0, 0.5); 
+// //$heroFontcolor:#fff; 
+// //news
+// //$news-button-background: #3498DB ;
+// $news-pod-back:#ffffff;
+// $news-pod-border-color:#ddd;
+// //accordion
+// //$accordion-color:green;
+// //$accordion-border-color:#ECF0F1;
+// //Block quote
+// // $blockquoteBorderColor:#bbcada ;
+// // $blockquoteQuoteColor:#333;
+// // $blockquoteQuoteFooterColor:#000;
+// //highlighted box in content assets
+// //$highlighted-background-color:#333 !default;
+// //$highlighted-font-color:#fff !default;
+// //$highlighted-alt-background-color:#f6f6f6 !default;
+// //$highlighted-alt-font-color:#333 !default;
+
+// //mega-promo
+// $promo-background-color:$lighter-grey;
+// $promo-arrow-color:#9DA5B2;
+// $promo-header-color:$blue;
+// $promo-secondary-color:$black;
+// $promo-highlight-background-color:$blue;
+// $promo-highlight-color:$white;
+
+// //button colours
+// $primary-button-background-color:$green;
+// $primary-button-color:$white;
+// $secondary-button-background-color:$blue;
+// $secondary-button-color:$white;
+// $outline-button-border-color:$blue;
+// $outline-button-color:$blue;
+
+// //group promo colours
+// $group-promo-background-color: $lighter-grey;
+// $group-promo-header-color: $blue;
+// $group-promo-description-color: $black;
+// $group-promo-arrow-color: $grey;
+
+// //form colours
+// $input-color:$black;
+// $input-border-color:$grey;
+
+// //back to top
+// //$back-top-color:white;
+// //$back-top-hover-color:white;
+// //$back-top-background:black;
+// //$back-top-hover-background:grey;
+
+// //phase banner
+// //$phase-banner-stage-background:#007299 !default;
+// //$phase-banner-stage-color:white !default;
+
+
+// //- FRONT END TOOLKIT
+// @import 'url-helper';
+// @import 'base';
+// @import 'brand-colors';
+// @import '2010-typography-overrides';
+// @import 'accordion';
+// @import 'a-to-z';
+// //@import 'block-links'; //subsite only
+// //@import 'block-quote'; //subsite only
+// //@import 'carousel';
+// //@import 'content-assets'; //subsite only
+// //@import 'content-link'; //subsite only
+// @import 'description-list';
+// @import 'doc-list';
+// @import 'events-search-results';
+// //@import 'events-webparts';
+// @import 'group-promo';
+// //@import 'hero-banner';
+// //@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+// @import 'icon-links';
+// @import 'lcc-hero';
+// @import 'mega-promo';
+// //@import 'news'; //subsites only
+// @import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+// @import 'journey-page';
+// @import 'phase-banner';
+// //@import 'polaroids'; //subsite only
+// //@import 'promo'; //subsites only
+// //@import 'promo-list-webpart'; //subsite only
+// //@import 'section-subsite'; //subsite only
+// @import 'sharepoint-overrides';
+// @import 'side-nav'; //needs aligning with side-navigation - DH & RM
+// //@import 'side-navigation'; //needs aligning with side-nav - DH & RM
+// @import 'sub-section-nav';
+// @import 'webchat';
+
+// //-PROJECT SPECIFIC
+// @import 'styleguide';//not needed for live site
+// //@import 'sticky-nav';//not currently needed for live site
+// @import 'modern-gov'; //not needed for live site
+
+// @import 'leedsgov-specific';
+// @import 'leedsgov-overrides';
+// @import 'where-i-live'; //needs fine tuning and adding to toolkit - DH
+
+// @import 'lcc-header'; //a part of the toolkit but needs to be at end
+
+// //site background
+// html {
+//     background-color: $blue;
+// }
+
+// //video container
+// .media-container {
+//     margin: 30px 0;
+// }
+
+// //Roadworks map
+// .ElginRoadworksWidget {
+//     margin-top: 40px;
+//     margin-bottom: 40px;
+//     @media (max-width: 450px) {
+//         height: 400px !important;
+//     }
+// }
+
+// //right hand column top margin
+// aside.col-md-4 {
+//     margin-top: 50px;
+//     @media (max-width: 990px) {
+//         margin-top: 30px;
+//     }
+//     &.empty {
+//         margin-top: 0 !important;
+//     }
+// }
+
+// //sub-section - Is this needed? Need to test. DH.
+// .sub-section-nav .sub-section a {
+//     .sub-section-heading {
+//         text-decoration: none;
+//         color: $base-link-color;
+//     }
+//     &:visited,
+//     &:visited .sub-section-heading {
+//         text-decoration: none !important;
+//         color: #663399;
+//     }
+// }
+
+// //social bookmark link text decoration color 
+// .socialBookmarks ul li a:visited {
+//     color: $blue;
+// }
+
+// //Promolistwebpart reset - Can this be global? Need to check. DH.
+// .promoListWebpart {
+//     ol,
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//     }
+// }
+
+// //self service custom buttons
+// .header-actions {
+//     position: absolute;
+//     top: -110px;
+//     right: 15px;
+//     @media (max-width: 641px) {
+//         position: relative;
+//         top: auto;
+//         right: auto;
+//         margin-bottom: 20px;
+//     }
+// }
+
+// //sp pagination
+// .pagination-nav {
+//     position: relative;
+//     #PagingSelf {
+//         position: absolute;
+//         left: 50%;
+//         width: 100px;
+//         top: 30%;
+//         margin-left: -50px;
+//         z-index: 5;
+//         @media (max-width: 641px) {
+//             position: relative;
+//             left: auto;
+//             width: 100%;
+//             top: auto;
+//             margin-left: 0;
+//             text-align: center
+//         }
+//     }
+// }
+
+// //btn overrides
+// .btn-primary {
+//     box-shadow: 0px 3px 0px darken($primary-button-background-color, 10%);
+// }
+
+// .btn-secondary {
+//     box-shadow: 0px 3px 0px darken($secondary-button-background-color, 10%);
+// }
+
+// .btn {
+//     padding: 15px 20px;
+//     &.btn-arrow,
+//     &.btn[rel=external] {
+//         padding-right: 45px;
+//         &:before {
+//             display: none !important;
+//         }
+//         &:after {
+//             right: 20px;
+//             top: 50%;
+//             height: auto;
+//             background: transparent;
+//             padding: 0 0 0 15px;
+//             font-size: inherit;
+//             text-align: center;
+//             line-height: 0;
+//             width: auto;
+//         }
+//     }
+//     &:focus,
+//     &:active {
+//         border-color: $focus-color !important;
+//         box-shadow: 0px 3px 0px $focus-color;
+//     }
+// }
+
+// //bredcrumb override
+// .breadcrumb {
+//     line-height: 1.5;
+// }
+
+// //temp fix for global master
+// .masterhead{
+//     display:none;
+// }
+
+// .main-nav ul li {
+//     margin-right: 20px;
+// }
