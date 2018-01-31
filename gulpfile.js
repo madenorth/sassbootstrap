@@ -5,7 +5,7 @@ var gutil = require('gulp-util');
 var rename = require("gulp-rename");
 var notify = require('gulp-notify');
 
-gulp.task('sass', [], (done) => {
+gulp.task('default', [], (done) => {
     return gulp.src('app/assets/sass/application.scss')
 
       .pipe(sass({includePaths: ['./app/assets/sass']}).on('error', function (err) {
