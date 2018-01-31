@@ -6,6 +6,23 @@ This project imports the bootstrap-sass NPM package and override default bootstr
 ## Installation
 
 Clone this repository, then run npm install to pull down the dependencies.
-You should now be able to run gulp to compile your sass files
 
-The compilled css file will be outputted into the dist directory
+## Building
+
+You should now be able to run the default gulp task to compile your sass files. 
+
+```sh
+
+```
+
+By default this will clean and minify your css, you can override this by calling gulp with the debug flag, like follows
+
+```sh
+gulp --debug
+```
+
+The compiled css file will be outputted into the dist directory
+
+## Viewing the output
+
+If you're only interested in compiling the bootstrap sass, you only need to be concern yourself with the gulp 'sass' task. The other tasks are there to support the HTML preview of your custom bootstrap file

@@ -11,9 +11,11 @@
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
     "gulp-notify": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-util": "^3.0.8",
     "util": "^0.10.3"
   }
